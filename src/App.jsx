@@ -1,14 +1,14 @@
 function App() {
   return (
     <>
-      <div className="home-screen container-fluid">
+      <div className="home-screen container-fluid" style={{ backgroundImage: "url('/images/bg.jpg'" }}>
         <div className="home-cover">
           <div id="menu-jk" className="header">
             <div className="container">
               <div className="row">
                 <div className="col-md-3 logo">
-                  <img className="logo-wt" src="assets/images/logo.png" alt="" />
-                  <img className="logo-gry" src="assets/images/logo-gray.png" alt="" />
+                  <img className="logo-wt" src="/images/logo.png" alt="" />
+                  <img className="logo-gry" src="/images/logo-gray.png" alt="" />
 
                   <a data-toggle="collapse" data-target="#menu" href="#menu">
                     <i className="fas d-block d-md-none small-menu fa-bars" />
