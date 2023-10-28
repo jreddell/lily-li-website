@@ -7,12 +7,12 @@ function App() {
             <div className="container">
               <div className="row">
                 <div className="col-md-3 logo">
-                  <img className="logo-wt" src="/images/logo.png" alt="" />
+                  {/* <img className="logo-wt" src="/images/logo.png" alt="" />
                   <img className="logo-gry" src="/images/logo-gray.png" alt="" />
 
                   <a data-toggle="collapse" data-target="#menu" href="#menu">
                     <i className="fas d-block d-md-none small-menu fa-bars" />
-                  </a>
+                  </a> */}
                 </div>
                 <div id="menu" className="col-md-9 d-none d-md-block">
                   <ul>
@@ -78,6 +78,7 @@ function App() {
         </div>
       </div>
       <div
+        id="contact_me"
         data-tf-widget="ONUmAUhT"
         data-tf-opacity="100"
         data-tf-iframe-props="title=Contact Form"
