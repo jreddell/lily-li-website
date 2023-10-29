@@ -1,4 +1,12 @@
+import { useEffect } from 'react';
+
 function App() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '//embed.typeform.com/next/embed.js';
+    document.body.append(script);
+  }, []);
+
   return (
     <>
       <div className="home-screen container-fluid" style={{ backgroundImage: "url('/images/bg.jpg'" }}>
@@ -7,12 +15,11 @@ function App() {
             <div className="container">
               <div className="row">
                 <div className="col-md-3 logo">
-                  {/* <img className="logo-wt" src="/images/logo.png" alt="" />
-                  <img className="logo-gry" src="/images/logo-gray.png" alt="" />
+                  {/* <img className="logo-wt" src="/images/face.png" alt="" /> */}
 
                   <a data-toggle="collapse" data-target="#menu" href="#menu">
                     <i className="fas d-block d-md-none small-menu fa-bars" />
-                  </a> */}
+                  </a>
                 </div>
                 <div id="menu" className="col-md-9 d-none d-md-block">
                   <ul>
@@ -37,6 +44,9 @@ function App() {
                 <h2>Lily Li</h2>
 
                 <p>Follow me trade</p>
+                <div className="texda">
+                  <a href="https://lilyli8.blogspot.com/">Read blog</a>
+                </div>
               </div>
             </div>
           </div>
@@ -49,7 +59,10 @@ function App() {
             {/* <p>The new common language will be more simple and regular than.</p> */}
           </div>
           <div className="about-row row">
-            <div className="">
+            <div className="col-md-5">
+              <img className="p-4" src="images/face.png" alt="" />
+            </div>
+            <div className="col-md-7">
               <p>
                 If you want to be the trader you have always yearned to be, if you want to carve a unique second career,
                 work remotely and independently across continents & time zones connected to network and to base, make
